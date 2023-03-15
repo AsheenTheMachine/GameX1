@@ -1,0 +1,21 @@
+﻿@page "/"
+
+@inject NavigationManager navManager
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello Kids</h1>
+
+Welcome to your GAME.
+
+<br />
+<br />
+
+<input type="button" class="btn" value="START GAME" @onclick="()=>NavigateStage1()" />
+
+@code {
+    void NavigateStage1() 
+    {
+        navManager.NavigateTo("stage1");
+    }
+}
