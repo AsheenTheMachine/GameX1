@@ -11,9 +11,9 @@ public interface IBaseService<T> where T : class
 
     Task<T> Get(Guid id);
 
-    Task<bool> Create(T book);
+    Task<bool> Create(T entity);
 
-    Task<bool> Update(T book);
+    Task<bool> Update(T entity);
 
     Task<bool> Delete(int id);
 }
